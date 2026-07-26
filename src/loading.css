@@ -1,0 +1,23 @@
+.loading-container {
+  position: fixed;
+  inset: 0;
+  background: #0f172a;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.loading-container h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.loading-container p {
+  font-size: 4rem;
+  font-weight: bold;
+  margin: 0;
+}

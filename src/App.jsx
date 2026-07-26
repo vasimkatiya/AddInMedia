@@ -4,12 +4,15 @@
 import About from "./components/About.jsx"
 import BookingForm from "./components/booking.jsx"
 import Contact from "./components/Con.jsx"
+import Loading from "./components/Loading.jsx"
 import Navbar from "./components/Navbar.jsx"
 import Services from "./components/Services.jsx"
 import ImageSlider from "./components/Slider.jsx"
 
 const App = () => {
   return (
+    <Loading>
+
     <>
     <Navbar />
     <div className="main">
@@ -30,6 +33,7 @@ const App = () => {
       </div>
     </div>
     </>
+    </Loading>
   )
 }
 
