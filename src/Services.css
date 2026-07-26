@@ -1,0 +1,206 @@
+.services {
+  padding: 90px 8%;
+  background: #722f37;
+}
+
+#services {
+  background: #2f7e52;
+}
+
+/* =========================
+   Heading
+========================= */
+
+.heading {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.marketing-heading {
+  margin-top: 100px;
+}
+
+.heading h4 {
+  color: #f6c37b;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+
+.heading h2 {
+  color: #fff;
+  font-size: 42px;
+  margin: 15px 0;
+}
+
+.heading p {
+  color: rgba(255, 255, 255, 0.8);
+  max-width: 700px;
+  margin: auto;
+  line-height: 1.8;
+}
+
+/* =========================
+   Grid
+========================= */
+
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+}
+
+/* =========================
+   Cards
+========================= */
+
+.service-card {
+  position: relative;
+  overflow: hidden;
+  background: #fff;
+  border-radius: 18px;
+  padding: 35px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, .15);
+  transition: all .35s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 18px 45px rgba(0,0,0,.25);
+}
+
+/* Colored Top Border */
+
+.service-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 8px;
+}
+
+/* =========================
+   Card Colors
+========================= */
+
+.basic::before {
+  background: #00bcd4;
+}
+
+.standard::before {
+  background: #ff6b00;
+}
+
+.gold::before {
+  background: #d4af37;
+}
+
+.creator::before {
+  background: #722f37;
+}
+
+.marketing-standard::before {
+  background: #00b894;
+}
+
+.marketing-enterprise::before {
+  background: #6c5ce7;
+}
+
+.marketing-business::before {
+  background: #ff9800;
+}
+
+/* =========================
+   Typography
+========================= */
+
+.service-card h3 {
+  font-size: 30px;
+  color: #222;
+  margin-bottom: 20px;
+}
+
+.price {
+  margin-bottom: 15px;
+}
+
+.price span {
+  color: #666;
+  font-size: 15px;
+}
+
+.price h2 {
+  color: #722f37;
+  font-size: 42px;
+  margin-top: 8px;
+}
+
+.service-card h4 {
+  margin: 20px 0;
+  color: #333;
+}
+
+.service-card ul {
+  list-style: none;
+  margin: 25px 0;
+}
+
+.service-card li {
+  margin-bottom: 12px;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* =========================
+   Button
+========================= */
+
+.service-card button {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 10px;
+  background: #722f37;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.service-card button:hover {
+  background: #8f3a45;
+}
+
+/* =========================
+   Mobile
+========================= */
+
+@media (max-width: 768px) {
+
+  .services {
+    padding: 70px 20px;
+  }
+
+  .heading h2 {
+    font-size: 32px;
+  }
+
+  .heading p {
+    font-size: 15px;
+  }
+
+  .price h2 {
+    font-size: 34px;
+  }
+
+  .service-card {
+    padding: 25px;
+  }
+
+  .service-card h3 {
+    font-size: 26px;
+  }
+}
